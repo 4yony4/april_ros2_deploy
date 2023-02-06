@@ -1,4 +1,4 @@
-cd ../../yarp/yarp_ros_talker
+cd ../../yarp/vojext-hpe
 rm -rf build
 mkdir build
 cd build

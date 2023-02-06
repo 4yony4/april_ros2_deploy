@@ -20,13 +20,22 @@ source clone_repos.sh
 cd "$path_to_one"
 source ros2_deps_build.sh
 
-
 cd "$path_to_one"
+source ros1_deps_build.sh
+
+
+cd "$current_path"
 #BUILD ROS2 DEPENDENCIES AND BUILD APRIL_ROS2
 gnome-terminal --title="BUILDING APRIL_ROS2" --tab -- bash -c "cd $current_path; source ros2_init.sh; cd $path_to_one; source april_ros_build.sh; exec bash -i"
 
 #BUILD ROS1 YARP_ROS_WS
-gnome-terminal --title="BUILDING ROS1 YARP_ROS_WS" --tab -- bash -c "cd $current_path; source ros1_init.sh; cd $path_to_one; source yarp_ros_ws_build.sh; exec bash -i"
+#gnome-terminal --title="BUILDING ROS1 YARP_ROS_WS" --tab -- bash -c "cd $current_path; source ros1_init.sh; cd $path_to_one; source yarp_ros_ws_build.sh; exec bash -i"
+
+#BUILD ROS1 APRIL_MSGS
+gnome-terminal --title="BUILDING ROS1 APRIL_MSGS" --tab -- bash -c "cd $current_path; source ros1_init.sh; cd $path_to_one; source april_msgs_ws_ROS1_build.sh; exec bash -i"
+
+#BUILD ROS2 APRIL_MSGS
+gnome-terminal --title="BUILDING ROS2 APRIL_MSGS" --tab -- bash -c "cd $current_path; source ros2_init.sh; cd $path_to_one; source april_msgs_ws_ROS2_build.sh; exec bash -i"
 
 #BUILD YARP DEMO APPS
 gnome-terminal --title="BUILD YARP DEMO APPS" --tab -- bash -c "cd $path_to_one; source yarp_build.sh; exec bash -i"
