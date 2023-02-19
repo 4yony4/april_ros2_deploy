@@ -11,14 +11,14 @@ source /opt/ros/galactic/setup.bash
 #colcon build
 #source ./install/setup.bash
 #source ${project_path}/scripts/ros2_init.sh
-cd ${project_path}/ROS2/vision_opencv
-colcon build
-source ./install/setup.bash
+#cd ${project_path}/ROS2/vision_opencv
+#colcon build
+#source ./install/setup.bash
 
 #source ${project_path}/scripts/ros2_init.sh
-cd ${project_path}/ROS2/image_common
-colcon build
-source ./install/setup.bash
+#cd ${project_path}/ROS2/image_common
+#colcon build
+#source ./install/setup.bash
 
 #cd ../../ROS2/ament_lint
 #colcon build
