@@ -1,6 +1,6 @@
-current_path="$PWD"
-cd ${current_path}/../..
-project_path="$PWD"
+#current_path="$PWD"
+#cd ${current_path}/../..
+#project_path="$PWD"
 
 source /opt/ros/galactic/setup.bash
 

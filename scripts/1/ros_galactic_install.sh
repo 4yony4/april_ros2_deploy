@@ -27,6 +27,7 @@ sudo apt-get -y install python3-wstool
 sudo apt -y install python3-colcon-common-extensions
 sudo apt-get -y install ros-galactic-cv-bridge
 sudo apt-get -y install ros-galactic-vision-opencv
+#sudo apt-get -y install ros-galactic-vision-msgs
 
 echo "INSTALL OPENCV AND OPENCV CONTRIB FROM SOURCE"
 sudo apt-get -y install libeigen3-dev libboost-all-dev libceres-dev

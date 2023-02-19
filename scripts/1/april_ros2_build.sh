@@ -1,8 +1,14 @@
-echo "Builing and Installing APRIL_ROS"
+echo "Builing and Installing APRIL_ROS2"
 
 #source /opt/ros/galactic/setup.bash
+#current_path="$PWD"
+#cd ${current_path}/../..
+#project_path="$PWD"
+#echo "!!!!!!!!!!!!!!!!  ------->>>>>>>>>>>>   ${project_path}"
+source ${project_path}/scripts/ros2_init.sh
 
-cd ../../ROS2/SEM_SIM_IIT/src
+
+cd ${project_path}/ROS2/SEM_SIM_IIT/src
 rm .rosinstall
 rm -rf dvs_msgs
 rm -rf prophesee_event_msgs
