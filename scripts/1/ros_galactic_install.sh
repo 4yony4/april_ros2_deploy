@@ -28,6 +28,7 @@ sudo apt -y install python3-colcon-common-extensions
 sudo apt-get -y install ros-galactic-cv-bridge
 sudo apt-get -y install ros-galactic-vision-opencv
 sudo apt-get -y install ros-galactic-image-common
+sudo apt-get -y install ros-galactic-ament-lint
 #sudo apt-get -y install ros-galactic-vision-msgs
 
 echo "INSTALL OPENCV AND OPENCV CONTRIB FROM SOURCE"
