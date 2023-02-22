@@ -2,7 +2,7 @@ echo "GENERATING YARP MSG IN ROS"
 
 current_path_2="$PWD"
 
-origin_path=~/Dev2/yarp/yarp_ros_talker/rosmsgs
+origin_path=${project_path}/yarp/yarp_ros_talker/rosmsgs
 for file in "$origin_path"/*.msg
 do
   #echo "$entry"
