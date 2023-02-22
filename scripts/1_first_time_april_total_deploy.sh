@@ -2,6 +2,7 @@
 current_path="$PWD"
 path_to_one="$PWD"/1
 project_path=${current_path}/..
+path_to_two="$PWD"/2
 
 cd "$path_to_one"
 source dirs_make.sh
@@ -44,6 +45,8 @@ cd "$path_to_one"
 
 cd "$path_to_one"
 #source ros1_deps_build.sh
+
+source $path_to_two/yarp_rosmsg_build.sh
 
 
 #cd "$current_path"
