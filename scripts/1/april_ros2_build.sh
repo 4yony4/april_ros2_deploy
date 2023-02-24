@@ -20,4 +20,5 @@ rm -rf event_ros_tools
 cd ../
 #wstool init src april_ros2.rosinstall
 
-colcon build --packages-skip rgb_camera yarp_ros_interfaces yarp_ros_proxy
+#colcon build --packages-skip rgb_camera yarp_ros_interfaces yarp_ros_proxy
+colcon build --packages-skip rgb_camera yarp_ros_interfaces

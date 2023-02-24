@@ -22,7 +22,7 @@ rm -rf build
 rm -rf log
 
 
-cd ${project_path}/ROS/april_msgs/
+cd ${project_path}/ROS/april_ros/
 rm -rf build_isolated
 rm -rf devel_isolated
 rm -rf install_isolated
