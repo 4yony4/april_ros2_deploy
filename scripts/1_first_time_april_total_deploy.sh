@@ -4,6 +4,9 @@ path_to_one="$PWD"/1
 project_path=${current_path}/..
 path_to_two="$PWD"/2
 
+ECHO "THIS SCRIPT WAS CHANGED TO RUN WITH YARP EDPR DOCKER. PLEASE SEE YARP_DOCKER_INSTRUCTIONS.ODT TO COMPLETE EXECUTION"
+read -p "Press enter to continue with ROS1 and ROS2 build"
+
 cd "$path_to_one"
 source dirs_make.sh
 
@@ -26,27 +29,27 @@ else
     source ros_galactic_install.sh
 fi
 
-if [ -d "/usr/local/share/yarp" ] 
-then
-    echo "YARP already installed" 
-else
-    echo "Installing YARP"
-    cd "$path_to_one"
-    source yarp_install.sh
-fi
+#if [ -d "/usr/local/share/yarp" ] 
+#then
+#    echo "YARP already installed" 
+#else
+#    echo "Installing YARP"
+#    cd "$path_to_one"
+#    source yarp_install.sh
+#fi
 
 
 
 cd "$path_to_one"
 source clone_repos.sh
 
-cd "$path_to_one"
+#cd "$path_to_one"
 #source ros2_deps_build.sh
 
-cd "$path_to_one"
+#cd "$path_to_one"
 #source ros1_deps_build.sh
 
-source $path_to_two/yarp_rosmsg_build.sh
+#source $path_to_two/yarp_rosmsg_build.sh
 
 
 #cd "$current_path"
@@ -72,6 +75,6 @@ gnome-terminal --title="BUILDING ROS1 APRIL_MSGS & APRIL_ROS" --tab -- bash -c "
 #     cd $path_to_one; source april_msgs_ws_ROS2_build.sh; exec bash -i"
 
 #BUILD YARP DEMO APPS
-gnome-terminal --title="BUILD YARP DEMO APPS" --tab -- bash -c "path_to_one="$PWD"/1; cd $path_to_one; source yarp_build.sh; exec bash -i"
+#gnome-terminal --title="BUILD YARP DEMO APPS" --tab -- bash -c "path_to_one="$PWD"/1; cd $path_to_one; source yarp_build.sh; exec bash -i"
 
 cd "$current_path"

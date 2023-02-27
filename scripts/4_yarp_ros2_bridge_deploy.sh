@@ -1,14 +1,16 @@
 current_path="$PWD"
 project_path=${current_path}/..
 
+ECHO "THIS SCRIPT WAS CHANGED TO RUN WITH YARP EDPR DOCKER. PLEASE SEE YARP_DOCKER_INSTRUCTIONS.ODT TO COMPLETE EXECUTION"
+read -p "Press enter to continue with ROS1, ROS1<-->ROS2 bridge and SEM_SIM_IIT RECEIVER"
 #START YARP SERVER
-gnome-terminal --title="YARP SERVER" --tab -- bash -c "export ROS_MASTER_URI=http://localhost:11311; yarpserver --ros; exec bash -i"
+#gnome-terminal --title="YARP SERVER" --tab -- bash -c "export ROS_MASTER_URI=http://localhost:11311; yarpserver --ros; exec bash -i"
 
 #START ROSCORE (ROS1 SERVER)
 gnome-terminal --title="ROSCORE ROS1 Server" --tab -- bash -c "source /opt/ros/noetic/setup.bash; roscore; exec bash -i"
 
 #START YARP TALKER
-gnome-terminal --title="YARP TALKER" --tab -- bash -c "sleep 2; cd ../yarp/yarp_ros_talker/build/;./talker; exec bash -i"
+#gnome-terminal --title="YARP TALKER" --tab -- bash -c "sleep 2; cd ../yarp/yarp_ros_talker/build/;./talker; exec bash -i"
 
 #START ROS1 <---> ROS2 BRIDGE
 gnome-terminal --title="ROS1 <--> ROS2 Bridge" --tab -- bash -c "current_path="$PWD"; project_path=${current_path}/..; source ros1_init.sh; source ros2_init.sh; cd ../ROS2/april_bridge;source install/local_setup.bash;export ROS_MASTER_URI=http://localhost:11311; ros2 run ros1_bridge dynamic_bridge; exec bash -i"
