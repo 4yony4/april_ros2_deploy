@@ -38,5 +38,11 @@ echo $CMAKE_PREFIX_PATH | tr ':' '\n'
 
 cd ${project_path}/ROS2/april_bridge/
 colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure
+source install/setup.bash
+
+echo "Resulting pairs for the Bridge are:"
+read -p "Press enter to continue with showing the pairs generated"
+
+ros2 run ros1_bridge dynamic_bridge --print-pairs
 
 cd $current_path

@@ -29,7 +29,7 @@ git clone --branch galactic https://github.com/YonyIIT/april_msgs.git
 #git clone --branch galactic git@github.com:aprilprojecteu/april_msgs.git
 #git clone --branch noetic git@github.com:aprilprojecteu/april_msgs.git
 git clone --branch noetic https://github.com/YonyIIT/vision_msgs.git
-git clone --branch main https://github.com/YonyIIT/yarp_msgs_ros1.git
+git clone --branch main https://github.com/YonyIIT/yarp_msgs_ros1.git yarp
 
 
 cd ${project_path}/yarp

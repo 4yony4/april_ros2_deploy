@@ -1,7 +1,7 @@
 current_path="$PWD"
 project_path=${current_path}/..
 
-ECHO "THIS SCRIPT WAS CHANGED TO RUN WITH YARP EDPR DOCKER. PLEASE SEE YARP_DOCKER_INSTRUCTIONS.ODT TO COMPLETE EXECUTION"
+echo "THIS SCRIPT WAS CHANGED TO RUN WITH YARP EDPR DOCKER. PLEASE SEE YARP_DOCKER_INSTRUCTIONS.ODT TO COMPLETE EXECUTION"
 read -p "Press enter to continue with ROS1, ROS1<-->ROS2 bridge and SEM_SIM_IIT RECEIVER"
 #START YARP SERVER
 #gnome-terminal --title="YARP SERVER" --tab -- bash -c "export ROS_MASTER_URI=http://localhost:11311; yarpserver --ros; exec bash -i"
