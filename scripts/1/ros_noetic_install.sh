@@ -5,4 +5,5 @@ sudo apt -y install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt -y update
 sudo apt -y install ros-noetic-ros-base
+sudo apt-get -y install ros-noetic-diagnostic-msgs
 #sudo apt-get -y install ros-noetic-vision-msgs

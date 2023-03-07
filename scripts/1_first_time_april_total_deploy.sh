@@ -44,6 +44,9 @@ cd "$path_to_one"
 source clone_repos.sh
 
 #cd "$path_to_one"
+#source install_hicem.sh
+
+#cd "$path_to_one"
 #source ros2_deps_build.sh
 
 #cd "$path_to_one"

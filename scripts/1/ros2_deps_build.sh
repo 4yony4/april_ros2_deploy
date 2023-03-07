@@ -26,9 +26,13 @@ source /opt/ros/galactic/setup.bash
 #source ${project_path}/scripts/ros2_init.sh
 cd ${project_path}/ROS2/vision_msgs
 colcon build
-source ./install/setup.bash
+source install/setup.bash
+
+cd ${project_path}/ROS2/diagnostics
+colcon build
+source install/setup.bash
 
 #source ${project_path}/scripts/ros2_init.sh
 cd ${project_path}/ROS2/april_msgs
 colcon build
-source ./install/setup.bash
+source install/setup.bash
